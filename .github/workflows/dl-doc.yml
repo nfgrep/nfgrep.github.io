@@ -14,6 +14,8 @@ jobs:
         run: curl -o resume.html 'https://docs.google.com/document/d/1RzkqCB2S9OWcQlwqs7co3hPQLxMg8-lfcqiUtrLNHUI/export?format=html'
       - name: Push Resume
         run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git status
           git diff
           git add .
