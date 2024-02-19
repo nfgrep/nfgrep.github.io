@@ -1,3 +1,5 @@
+name: Download Resume
+
 on:
   schedule:
     - cron: '*/5 * * * *'
